@@ -23,7 +23,7 @@ public class Hangman {
     public void startGame(){
         while (true) {
             System.out.println("HANGMAN");
-            System.out.println("Type \"play\" to play the game or \"exit\" ");
+            System.out.println("Type \"play\" to play the game or \"exit\"");
             String choice = input.nextLine();
             if (Objects.equals(choice, "play")){
                 setRandomWord();
