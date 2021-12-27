@@ -1,12 +1,18 @@
 package Hangman;
 
 import java.util.Scanner;
+import java.util.Random;
 
 public class Hangman {
     public static void main(String[] args) {
-        System.out.println("HANGMAN\n"+
-                "The game will be available soon.");
-        String word = "java";
+
+
+        String[] words_arr = {"java", "kotlin", "python", "javascript"};
+
+        Random randomIntGen = new Random();
+        int randomInt = randomIntGen.nextInt(words_arr.length);
+        String word = words_arr[randomInt];
+
         System.out.println("HANGMAN");
         System.out.println("Guess the word: ");
         Scanner input = new Scanner(System.in);
